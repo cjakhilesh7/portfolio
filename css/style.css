@@ -27,13 +27,12 @@
     background-color: text;
 
 }
-da:hover{
-    background-color: var(--gradient-color);
+.nav-link:hover{
+    background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: text;
-
 }
+
 
 
 /* Banner Area */
@@ -58,11 +57,12 @@ da:hover{
 .site-title h1{
     font-size: 4rem;
 }
-.site-banner.banner-image>img{
-    padding: 7rem;;
-    width: 90rem;
-
+.banner-image img{
+    padding: 2rem;
+    max-width: 100%;
+    height: auto;
 }
+
 .banner-image{
     padding-top: 8%;
 }
@@ -177,21 +177,16 @@ p.para{
 
 
 /* Optional: Make navbar height clean */
-.navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.nav-logo {
-    height: 55px;
-}
 
-@media (max-width: 768px) {
-    .nav-logo {
-        height: 40px;
-    }
-}
+
 .navbar-brand img {
     height: 55px;
     width: auto;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
 }
