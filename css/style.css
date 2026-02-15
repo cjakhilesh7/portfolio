@@ -4,12 +4,35 @@
 @import url(./partials/_globle.css);
 
 /* start navigation */
+.header_area {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .navbar-brand {
-    padding-left: 1rem;
+    padding-left: 0;
 }
 
 .navbar {
     padding: 0.8rem 5%;
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .nav-link {
@@ -362,6 +385,19 @@ footer h2 {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+    .navbar {
+        padding: 0.8rem 3%;
+    }
+
+    .nav-link {
+        padding: 1rem;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 1rem 0;
+    }
+
     .about-area {
         padding: 4rem 2rem;
     }
@@ -390,8 +426,24 @@ footer h2 {
         padding: 0.8rem 2%;
     }
 
+    .navbar-brand img {
+        height: 45px;
+    }
+
+    .navbar-toggler {
+        padding: 0.4rem 0.6rem;
+        border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-collapse {
+        margin-top: 1rem;
+        border-top: 1px solid #eee;
+        padding-top: 1rem;
+    }
+
     .nav-link {
-        padding: 1rem;
+        padding: 0.8rem 1rem;
+        text-align: center;
     }
 
     .site-title h1 {
@@ -420,6 +472,23 @@ footer h2 {
 }
 
 @media (max-width: 576px) {
+    .navbar {
+        padding: 0.6rem 1rem;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-toggler {
+        padding: 0.35rem 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.6rem 0.5rem;
+        font-size: 14px;
+    }
+
     .site-title h1 {
         font-size: 2rem;
     }
