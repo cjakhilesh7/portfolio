@@ -171,4 +171,25 @@ p.para{
     font: normal 700 25px/12px var(--roboto);
     
 }
-    
+
+/* Navbar Logo Size Fix */
+.nav-logo {
+    height: 55px;   /* Perfect professional navbar size */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Optional: Make navbar height clean */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav-logo {
+    height: 55px;
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 40px;
+    }
+}
