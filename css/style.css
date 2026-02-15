@@ -5,12 +5,13 @@
 
 /* start navigation */
 .navbar-brand{
-    padding: 0 2rem 0 5rem;
+    padding-left: 1rem;
+}
 
-}
 .navbar{
-    padding: 1rem 20rem;
+    padding: 0.8rem 5%;
 }
+
 .nav-link{
     font: normal 500 15px/2px var(--roboto);
     font-family: var(--roboto);
@@ -173,11 +174,7 @@ p.para{
 }
 
 /* Navbar Logo Size Fix */
-.nav-logo {
-    height: 55px;   /* Perfect professional navbar size */
-    width: auto;
-    object-fit: contain;
-}
+
 
 /* Optional: Make navbar height clean */
 .navbar {
@@ -192,4 +189,9 @@ p.para{
     .nav-logo {
         height: 40px;
     }
+}
+.navbar-brand img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
 }
